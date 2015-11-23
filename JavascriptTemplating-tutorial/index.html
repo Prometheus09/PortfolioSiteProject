@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Javascript Templating Using Underscore JS</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/pagination.css" />
+    </head>
+    <body>
+        <div class="page">
+            <h1>Awesome Contacts List</h1>
+            
+            <div class="contacts-list">
+                
+				
+                
+            </div>
+        </div>
+		
+		<div class="pagination"></div>
+		
+		<script type="text/template" id="contact-template">
+		<% _.each(contacts, function(contact) { %>
+			<div class="contact">
+				<div class="upper">
+					<img src="<%= contact.imageUrl %>">
+					<span class="address"><%= contact.address %></span>
+					<a href="mailto:<%= contact.email %>" class="email"><%= contact.email %></a>
+					<span class="number"><%= contact.number %></span>
+				</div>
+				<div class="lower">
+					<span class="name"><%= contact.name %></span>
+				</div>
+			</div>
+		<% }); %>
+		</script>
+		
+		<script src="js/jquery.js"></script>
+		<script src="js/underscore.js"></script>
+		<script src="js/pagination.js"></script>
+		<script src="js/custom.js"></script>
+    </body>
+</html>
