@@ -1,0 +1,25 @@
+﻿.box li{
+color:black;
+}
+.box h2{
+color:black;
+font-weight: 900;
+
+}
+.box{
+opacity: 0.95;
+box-shadow: 0 0 20px black;
+}
+.box2 li{
+color:black;
+}
+.box2 h2{
+color:black;
+font-weight: 900;
+
+}
+.box2{
+opacity: 0.95;
+box-shadow: 0 0 20px black;
+
+}
